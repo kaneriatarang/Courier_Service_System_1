@@ -1,0 +1,67 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pickup_frame"
+    tools:context="com.example.dmc16.courier_service_system_1.fragment.tab_Fragments.PickupFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    >
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Mode of Transport"
+       android:textAlignment="center"
+       android:textSize="30dp"
+       android:textStyle="bold"
+       android:textColor="@color/colorPrimary"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/byAir_CheckBox"
+            android:text="By Air"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/byRoad_CheckBox"
+            android:layout_below="@+id/byAir_CheckBox"
+            android:text="By Road"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_alignStart="@id/byAir_CheckBox"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/byRoad_CheckBox_CheckBox"
+            android:layout_below="@+id/byRoad_CheckBox"
+            android:text="By Rail"
+            android:textSize="25dp"
+            android:layout_alignStart="@id/byAir_CheckBox"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/search_office_Button"
+        android:text="Search"
+        android:textColor="#FFFFFFFF"
+        android:textSize="25sp"
+        android:layout_width="250dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#A8A8A8"
+
+        />
+</LinearLayout>
+</FrameLayout>
